@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiko Bold' 'Times New Roman', Times, serif;
+}
+
+@font-face  {
+    font-family: "Amiko Bold";
+    src: url("../assets/fonts/Amiko-Bold.ttf");
+}
+
+/* ************************************************************* */
+
+/* classes a serem utilizadas */
+
+.border-bottom-light {
+    border: 1px solid #fff;
+    max-width: 500px;
+    min-width: 300px;
+    margin-bottom: 15px;
+}
+
+.border-bottom-blue {
+    border: 1px solid #008BC3;
+}
+
+.menu-mobile {
+    width: 50px;
+    height: 5px;
+    margin: 5px;
+    background-color: #fff;
+   
+}
+
+.menuOpened {
+    display: flex;
+}
+
+section  {
+    font-weight: bold;
+    color: #434a55;
+    margin: 50px 0px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #008BC3;
+}
+
+.btn.btn-primary a{
+    color: white;
+}
+
+/* ******************************************************************* */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 600px;
+    background-image: url(../images/backgound-header.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+
+.header {
+    background-image: none;
+    height: 96px;
+    background-color: #fff;
+}
+
+.header-topo {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; 
+    background-color:rgba(0, 0, 0, 0.6);
+    /* border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    position: fixed;
+    margin-top: -20px;
+    padding-left: 15px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    padding: 0 50px;
+}
+
+nav a img {
+    width: 25px;
+    background-color: #c1c5cd;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 5em;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 5px 20px;
+}
+
+nav .active a,
+nav li a:hover {
+    background-color: #008BC3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #fff;
+}
+
+#menuOpener {
+    display: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+
+/*Marcação das páginas*/
+
+/* nav a:hover, #inicio a {
+    color: #fff;
+    background-color: #008BC3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+ } */
+
+
+ .header-meio {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 130px;
+ }
+
+ .header-meio h1 {
+     font-size: 55px;
+     color: #f2f2f2;
+     text-transform: uppercase;
+ }
+
+ .header-meio p {
+     color: #f2f2f2;
+     letter-spacing: 2px;
+ }
+
+ .w-button {
+     width: 300px;
+     background-color: #008BC3;
+     text-transform: uppercase;
+ }
+
+/* ************************************************************************ */
+
+#chk{
+    display: none;
+}
+
+.top-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 350px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 40%) ;
+    text-align: center;
+}
+
+
+.box-blue {
+    background-color: #0076A6;
+    color: #f9f9f9;
+}
+
+.box-blue h3 {
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.box-blue p {
+    color: #c1c5cd;
+}
+
+.div-img { 
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.box-branco h3 {
+    text-transform: uppercase;
+    color: #0076A6;
+    font-weight: bold;
+}
+
+
+.border-title-blue {
+    border: 1px solid #008BC3;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.border-title-branco {
+    border: 1px solid #f9f9f9;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+/* ******************************************************************************* */
+
+.cpaas-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.img-tablet {
+    min-width: 400px;
+    margin-right: 60px;
+}
+
+.cpaas-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cpaas-desc h1 {
+    text-transform: uppercase;
+}
+
+.cpaas-desc h5 {
+    color: #008BC3;
+    letter-spacing: 1.5px;
+}
+
+/* *************************************************************** */
+
+.nossos-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border-title-services {
+    border: 1px solid #008BC3;
+    width: 5em;
+    height: 0;
+    margin: 15px;
+
+}
+
+.border-title-services-box {
+    border: 1px solid #008BC3;
+    width: 80%;
+    height: 0;
+    margin: 15px;
+
+}
+
+.title-services {
+    display: flex;
+    align-items: center;
+}
+
+.title-services h2 {
+    text-transform: capitalize;
+}
+
+
+.box-services {
+    display: flex;
+}
+
+.info-services { 
+    display: flex;
+    border-radius: 15px;
+    margin: 10px;
+    /* max-width: 550px; */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 40%);
+}
+
+.card-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #006C97;
+    padding: 15px;
+    margin: 10px;
+    color: #e8e6ee;
+    flex: 1;
+}
+
+.div-img-services {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #e8e6ee;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.div-img-services img {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.info-card-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    flex: 2;
+}
+
+.info-card-services h5, h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-card-services p {
+    text-align: justify;
+}
+
+
+
+
+/* ************************************************************************* */
+
+footer {
+    display: flex;
+    background-color: #404040;
+    margin: 0;
+}
+
+footer p,
+footer h5 {
+    color: #f2f2f2;
+}
+
+footer section {
+    margin: 25px;
+}
+
+footer img {
+    width: 35px;
+}
+
+.boxes-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes-footer p {
+    font-size: 13px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 80px;
+}
+
+.footer-box h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.border-title-footer {
+    width: 60%;
+    border: 1px solid #008BC3;
+    margin-bottom: 15px;
+}
+
+.redes-sociais a {
+    margin-right: 10px;
+}
+
+
+.w-footer-button {
+    width: 200px;
+    background-color: #008BC3;
+    text-transform: uppercase;
+}
+
+
+.link-contato {
+    margin-bottom: 10px;
+}
+
+.link-contato a{
+    display: inline;
+    align-items: center;
+    overflow: hidden;
+}
+
+.link-contato a p {
+    margin-left: 10px;
+    display: inline;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.direitos-reservados {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+
+ /* Responsividade */
+
+ @media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-topo {
+       align-items: center;
+    } 
+
+    .header-meio h1 {
+        font-size: 40px;
+    }
+
+    .top-1 {
+        display: flex;
+        margin-top: -50px;
+        flex-direction: column;
+    }
+
+    .box-info {
+        width: 100%;
+    }
+
+    .img-tablet {
+        display: none;
+    }
+
+    .cpaas-desc p, .cpaas-desc h5 {
+       text-align: center;
+    }
+
+    .box-services {
+        flex-direction: column;
+    }
+
+    .info-services {
+        margin: 15px 0;
+    }
+
+    .boxes-footer {
+        flex-direction: column; 
+    }
+
+    .footer-box {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .footer-box:last-child {
+        margin-bottom: 0;
+    }
+
+
+ }
+
+
+ @media (max-width: 992px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color:rgba(0, 0, 0, 0.9);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 57px;
+        height: calc(100vh - 57px);
+    }
+
+    #menuOpener {
+        display: block;
+        border: 0;
+    }
+
+    .card-services h4 {
+        font-size: 15px;
+    }
+
+    .header-meio {
+        margin-top: 100px;
+    }
+
+ }
+
+ @media (max-width: 444px) {
+    .header-meio h1 {
+        font-size: 25px;
+    }
+ }
+
+ @media (max-width: 427px) {
+    .border-title-services {
+        display: none;
+    }
+
+    .nossos-servicos h2 {
+        font-size: 30px;
+    }
+ }
+
+@media (max-width: 393px) {
+
+  
+}
+
+@media (max-width: 393px) {
+    header {
+        height: 100vh;
+    }
+
+    .w-button {
+        max-width: 200px;
+    }
+
+    .header-meio {
+        margin-top: 70px;
+    }
+
+    .card-services {
+        display: none;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header .border-bottom-light {
+        min-width: 30px;
+    }
+
+}
+
+/* fim do index */
+
+/* inicio número máscara */
+
+.nm-info-1 {
+    display: flex;
+    text-align: justify;
+}
+
+.nm-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.nm-info-box h3, h5 {
+    text-transform: uppercase;
+}
+
+.nm-info-box h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+.nm-info-box ul {
+    margin-left: -10px;
+}
+
+.color-blue {
+    color: #008BC3;
+}
+
+
+/* ******************************* */
+
+.nm-info-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nm-bg-info {
+    background-color: #F4F4F4;
+    padding: 10typx 0;
+}
+
+.nm-border-width {
+    width: 40vw;
+}
+
+.nm-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 40%) ;
+    max-width: 250px;
+    min-height: 400px;
+}
+
+.nm-card h5 {
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.nm-card img {
+    width: 100px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nm-title-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* *************************************************** */
+
+.nm-div-img {
+    background-image: url(../nm-images/major-tom-agency.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.img-major {
+    width: 100%;
+    max-height: 600px;
+}
+
+.nm-box-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #29A0D0;
+    color: #f2f2f2;
+    padding: 10px ;
+    min-height: 450px;
+    
+}
+
+.nm-box-blue h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ************************************************** */
+
+.nm-info-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.nm-info-3-box {
+    padding: 20px;
+}
+
+.nm-info-3-box ul li {
+   margin: 8% 0;
+}
+
+.nm-info-3-box ul li:first-child,
+.nm-info-3-box ul li:last-child {
+    margin: 0;
+}
+
+/* ************************************************** */
+
+@media (max-width: 991px) {
+    .nm-info-1 img {
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .nm-info-3 img {
+        width: 80%;
+      margin-left: 30px;
+    }
+
+
+    .nm-info-1 ul, li {
+        margin-bottom: 15px;
+    }
+
+    .nm-info-1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nm-info-1 h3, h5 {
+        text-align: center;
+    }
+
+    .nm-card img {
+        width: px;
+    }
+
+    .nm-card {
+        max-width: 100%;
+        width: 100%;
+        margin: 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex-1 {
+        flex: none;
+    }
+
+    .flex-2 {
+        flex: none;
+    }
+
+    .nm-info-3 img {
+        width: 80%;
+    }
+
+    .nm-div-img {
+        display: none;
+    }
+
+    .header-topo .flex {
+        flex-direction: row;
+    }
+
+    .header-topo .flex-1 {
+        flex: 1;
+    }
+
+    .header-topo img {
+        width: 80%;
+    }
+
+    .footer-box h5 {
+        text-align: left;
+    }
+}
+
+/* fim do N. Máscara */
+
+
+
+
